@@ -26,7 +26,7 @@ Installed WordPress versions with right test library for each versions:
 latest
 ```
 
-Add new versions to `versions.sh` and not each docker container.
+
 
 ## Usage
 
@@ -37,6 +37,10 @@ docker run --rm -v /path/to/plugin:/opt --link mysql frozzare/wptest:7.0 vendor/
 ```
 
 If you would like to test against another WordPress version add the environment variable `WP_VERSION=4.4` when you run the container.
+
+## Contributing
+
+Add new WordPress versions to `versions.sh` and run `update.sh` instead of adding them to each docker container.
 
 ## License
 
