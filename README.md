@@ -26,6 +26,8 @@ Installed WordPress versions with right test library for each versions:
 latest
 ```
 
+Add new versions to `versions.sh` and not each docker container.
+
 ## Usage
 
 First create a `mysql` container with user root and no password and then you can run:

@@ -19,7 +19,6 @@ versions_to_install=(
 
 	latest
 )
-
 DB_NAME=wordpress_test
 DB_USER=root
 DB_PASS=''
