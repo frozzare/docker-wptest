@@ -1,21 +1,23 @@
 #!/bin/bash
 
 versions_to_install=(
-	4.4
-	4.4.1
-	4.4.2
-	4.4.3
-	4.4.4
-	4.4.5
+  4.4
+  4.4.1
+  4.4.2
+  4.4.3
+  4.4.4
+  4.4.5
 
-	4.5
-	4.5.1
-	4.5.2
-	4.5.3
-	4.5.4
+  4.5
+  4.5.1
+  4.5.2
+  4.5.3
+  4.5.4
 
-	4.6
-	4.6.1
+  4.6
+  4.6.1
+
+  latest
 )
 DB_NAME=wordpress_test
 DB_USER=root
@@ -40,8 +42,7 @@ prepare() {
   else
     # http serves a single offer, whereas https serves multiple. we only want one
     download http://api.wordpress.org/core/version-check/1.7/ /tmp/wp-latest.json
-    grep '[0-9]+\.[0-9]+(\.[0-9]+)?' /tmp/wp-latest.json
-    LATEST_VERSION=$(grep -o '"version":"[^"]*' /tmp/wp-latest.json | sed 's/"version":"//')
+    local LATEST_VERSION=$(grep -o '"version":"[^"]*' /tmp/wp-latest.json | sed 's/"version":"//')
     if [[ -z "$LATEST_VERSION" ]]; then
       echo "Latest WordPress version could not be found"
       exit 1
