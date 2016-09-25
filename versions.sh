@@ -16,6 +16,4 @@ versions_to_install=(
 
 	4.6
 	4.6.1
-
-	latest
 )

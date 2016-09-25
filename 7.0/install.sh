@@ -16,8 +16,6 @@ versions_to_install=(
 
 	4.6
 	4.6.1
-
-	latest
 )
 DB_NAME=wordpress_test
 DB_USER=root
