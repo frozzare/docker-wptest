@@ -1,7 +1,5 @@
 # docker-wptest
 
-> WIP!
-
 Run WordPress tests in a Docker container.
 
 Installed WordPress versions with right test library for each versions:
