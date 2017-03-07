@@ -51,4 +51,4 @@ install_db
 echo "Test suite is ready"
 
 # Run tests.
-exec $@
+exec "$@"

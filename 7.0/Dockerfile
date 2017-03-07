@@ -27,9 +27,6 @@ RUN apt-get update && apt-get install -y \
 # Environment variables.
 ENV WP_VERSION latest
 
-# Install dependencies.
-RUN apt-get update && apt-get install -y wget subversion mysql-client
-
 # Copy files.
 COPY install.sh /usr/local/bin
 COPY docker-entrypoint.sh /usr/local/bin

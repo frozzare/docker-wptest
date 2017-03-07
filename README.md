@@ -21,14 +21,23 @@ Installed WordPress versions with right test library for each versions:
 4.6
 4.6.1
 
+4.7
+4.7.1
+4.7.2
+4.7.3
+
 latest
 ```
 
-
-
 ## Usage
 
-First create a `mysql` container with user root and no password and then you can run:
+First create a `mysql` container with user root and no password
+
+```
+docker run --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=true -d mysql:latest
+```
+
+and then you can run:
 
 ```
 docker run --rm -v /path/to/plugin:/opt --link mysql frozzare/wptest:7.0 vendor/bin/phpunit
@@ -38,7 +47,7 @@ If you would like to test against another WordPress version add the environment 
 
 ## Contributing
 
-Add new WordPress versions to `versions.sh` and run `update.sh` instead of adding them to each docker container.
+Add new WordPress versions to `versions.sh` and run `update.sh` instead of adding them to each docker container and update the readme file with new versions.
 
 ## License
 

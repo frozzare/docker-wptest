@@ -17,6 +17,11 @@ versions_to_install=(
   4.6
   4.6.1
 
+  4.7
+  4.7.1
+  4.7.2
+  4.7.3
+
   latest
 )
 DB_NAME=wordpress_test
