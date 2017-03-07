@@ -24,9 +24,6 @@ RUN apt-get update && apt-get install -y \
    soap \
    zip
 
-# Environment variables.
-ENV WP_VERSION latest
-
 # Copy files.
 COPY install.sh /usr/local/bin
 COPY docker-entrypoint.sh /usr/local/bin
