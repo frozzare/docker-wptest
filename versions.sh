@@ -24,5 +24,8 @@ versions_to_install=(
   4.7.4
   4.7.5
 
+  4.8
+  4.8.1
+
   latest
 )
