@@ -45,7 +45,7 @@ docker run --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=true -d mysql:latest
 and then you can run:
 
 ```
-docker run --rm -v /path/to/plugin:/opt --link mysql frozzare/wptest:7.0 vendor/bin/phpunit
+docker run --rm -v $(pwd):/opt --link mysql frozzare/wptest:7.0 vendor/bin/phpunit
 ```
 
 If you would like to test against another WordPress version add the environment variable `WP_VERSION=4.4` when you run the container.
