@@ -29,6 +29,7 @@ Installed WordPress versions with right test library for each versions:
 4.8
 4.8.1
 4.8.2
+4.8.3
 
 latest
 ```
