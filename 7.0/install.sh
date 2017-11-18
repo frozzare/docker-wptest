@@ -29,6 +29,8 @@ versions_to_install=(
   4.8.2
   4.8.3
 
+  4.9
+
   latest
 )
 DB_NAME=wordpress_test
