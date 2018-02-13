@@ -30,6 +30,10 @@ versions_to_install=(
   4.8.3
 
   4.9
+  4.9.1
+  4.9.2
+  4.9.3
+  4.9.4
 
   latest
 )
