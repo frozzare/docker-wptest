@@ -45,7 +45,7 @@ latest
 First create a `mysql` container with user root and no password
 
 ```
-docker run --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=true -d mysql:latest
+docker run --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=true -d mysql:5
 ```
 
 and then you can run:
