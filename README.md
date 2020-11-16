@@ -36,6 +36,71 @@ Installed WordPress versions with right test library for each versions:
 4.9.2
 4.9.3
 4.9.4
+4.9.5
+4.9.6
+4.9.7
+4.9.8
+4.9.9
+4.9.10
+4.9.11
+4.9.12
+4.9.13
+4.9.14
+4.9.15
+4.9.16
+
+5.0
+5.0.1
+5.0.2
+5.0.3
+5.0.4
+5.0.5
+5.0.6
+5.0.7
+5.0.8
+5.0.9
+5.0.10
+5.0.11
+
+5.1
+5.1.1
+5.1.2
+5.1.3
+5.1.4
+5.1.5
+5.1.6
+5.1.7
+5.1.8
+
+5.2
+5.2.1
+5.2.2
+5.2.3
+5.2.4
+5.2.5
+5.2.6
+5.2.7
+5.2.8
+5.2.9
+
+5.3
+5.3.1
+5.3.2
+5.3.3
+5.3.4
+5.3.5
+5.3.6
+
+5.4
+5.4.1
+5.4.2
+5.4.3
+5.4.4
+
+5.5
+5.5.1
+5.5.2
+5.5.3
 
 latest
 ```
@@ -52,6 +117,12 @@ and then you can run:
 
 ```
 docker run --rm -v $(pwd):/opt --link mysql frozzare/wptest:7.0 vendor/bin/phpunit
+```
+
+If you run it on Windows and get error like `... "$(pwd)" includes invalid characters...`, try to use `%cs%` instead `$(pwd)`:
+
+```
+docker run --rm -v %cd%:/opt --link mysql frozzare/wptest:7.0 vendor/bin/phpunit
 ```
 
 If you would like to test against another WordPress version add the environment variable `WP_VERSION=4.4` when you run the container.
