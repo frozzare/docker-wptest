@@ -100,6 +100,12 @@ versions_to_install=(
   5.5.2
   5.5.3
 
+  5.6
+  5.6.1
+  5.6.2
+
+  5.7
+
   latest
 )
 DB_NAME=wordpress_test
